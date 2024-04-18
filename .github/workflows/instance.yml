@@ -65,10 +65,7 @@ jobs:
   # Destroying the  ec2 instance
   destroy_instance:
     runs-on: ubuntu-latest
-    
-    # Execute this job only if the action input is "destroy"
-    if: ${{ github.event.inputs.action == 'destroy' }}
-    
+       
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
